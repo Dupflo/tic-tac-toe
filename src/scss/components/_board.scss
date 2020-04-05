@@ -1,0 +1,48 @@
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.game {
+  &__board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
+    background-color: $color-primary--light;
+    color: #fff;
+    border: 6px solid $color-primary;
+    border-radius: 10px;
+    @include box-shadow;
+  }
+}
+
+@media screen and (max-width:650px){
+  .game {
+    &__board {
+      width: 300px;
+      height: 300px;
+      border: 2px solid $color-primary;
+    }
+    &__box {
+      font-size: 4em!important;
+      border: 4px solid $color-primary!important;
+    }
+  }
+  .winner {
+    font-size: 1.5em!important;
+    padding: 20px;
+}
+}
+
+.start-btn {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: $color-primary--light;
+  border-radius: 10px;
+  border: 6px solid $color-primary;
+}
