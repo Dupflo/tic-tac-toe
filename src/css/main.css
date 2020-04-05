@@ -89,6 +89,7 @@ body {
   grid-template: repeat(3, 1fr)/repeat(3, 1fr);
   width: 600px;
   height: 600px;
+  font-family: Arial, sans-serif;
   background-color: #4b5179;
   color: #fff;
   border: 6px solid #212750;
