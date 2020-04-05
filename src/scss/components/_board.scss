@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
 }
 .game {
   &__board {
@@ -34,7 +35,7 @@
   }
   .winner {
     font-size: 1.5em!important;
-    padding: 20px;
+    width: 100%;
 }
 }
 

@@ -80,7 +80,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .game__board {
@@ -108,7 +109,7 @@ body {
 
   .winner {
     font-size: 1.5em !important;
-    padding: 20px;
+    width: 100%;
   }
 }
 .start-btn {
